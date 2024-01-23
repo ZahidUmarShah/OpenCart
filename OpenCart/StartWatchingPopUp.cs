@@ -52,7 +52,7 @@ namespace OpenCart
             //close that pop-up i.e., (OpenCartRepository.Instance.MyAccountGoogleChrome And OpenCartRepository.Instance.MyAccountGoogleChrome.BtnCloseInfo); in which
             // MyAccountGoogleChrome is the object in the object repository taken for the pop-up dialog and BtnCloseInfo is the close button on that pop-up
             
-            WatchAutoComplete.DoWatchAutoComplete.WatchAndClick (OpenCartRepository.Instance.MyAccountGoogleChrome,OpenCartRepository.Instance.MyAccountGoogleChrome.BtnCloseInfo);
+            WatchAutoComplete.DoWatchAutoComplete.WatchAndClick (OpenCartRepository.Instance.MyAccountGoogleChrome,OpenCartRepository.Instance.MyAccountGoogleChrome.ButtonCloseInfo);
             WatchAutoComplete.DoWatchAutoComplete.Start(); //Starts the PopupWatcher class to monitor the popup if that appears 
         }
     }

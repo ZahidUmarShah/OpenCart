@@ -629,7 +629,7 @@ namespace OpenCart
         public partial class MyAccountGoogleChromeAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _chrome_popupInfo;
-            RepoItemInfo _btncloseInfo;
+            RepoItemInfo _buttoncloseInfo;
 
             /// <summary>
             /// Creates a new MyAccountGoogleChrome  folder.
@@ -638,7 +638,7 @@ namespace OpenCart
                     base("MyAccountGoogleChrome", "/form[@title>'My Account - Google Chrom']/container/form[@accessiblename>'Check your saved password']/container/container[@accessiblerole='Pane']", parentFolder, 30000, null, true, "328217ed-36c9-4e10-a449-66b2036286dc", "")
             {
                 _chrome_popupInfo = new RepoItemInfo(this, "Chrome_Popup", "container[@accessiblename>'My Account - Google Chrom']/form/container/container[@accessiblerole='Pane']", 30000, null, "9dc24563-cfaa-4642-9f4c-61e41e4d81aa");
-                _btncloseInfo = new RepoItemInfo(this, "BtnClose", "container[@accessiblerole='Pane']/?/?/button[@accessiblename='Close']", 30000, null, "40bb6f94-33f7-4788-ab52-4e4241cf26ef");
+                _buttoncloseInfo = new RepoItemInfo(this, "ButtonClose", "container[@accessiblerole='Pane']/?/?/button[@accessiblename='Close']", 30000, null, "40bb6f94-33f7-4788-ab52-4e4241cf26ef");
             }
 
             /// <summary>
@@ -690,26 +690,26 @@ namespace OpenCart
             }
 
             /// <summary>
-            /// The BtnClose item.
+            /// The ButtonClose item.
             /// </summary>
             [RepositoryItem("40bb6f94-33f7-4788-ab52-4e4241cf26ef")]
-            public virtual Ranorex.Button BtnClose
+            public virtual Ranorex.Button ButtonClose
             {
                 get
                 {
-                    return _btncloseInfo.CreateAdapter<Ranorex.Button>(true);
+                    return _buttoncloseInfo.CreateAdapter<Ranorex.Button>(true);
                 }
             }
 
             /// <summary>
-            /// The BtnClose item info.
+            /// The ButtonClose item info.
             /// </summary>
             [RepositoryItemInfo("40bb6f94-33f7-4788-ab52-4e4241cf26ef")]
-            public virtual RepoItemInfo BtnCloseInfo
+            public virtual RepoItemInfo ButtonCloseInfo
             {
                 get
                 {
-                    return _btncloseInfo;
+                    return _buttoncloseInfo;
                 }
             }
         }
