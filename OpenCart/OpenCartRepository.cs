@@ -301,7 +301,7 @@ namespace OpenCart
             RepoItemInfo _productmenuInfo;
             RepoItemInfo _productcategoryInfo;
             RepoItemInfo _productInfo;
-            RepoItemInfo _productitemInfo;
+            RepoItemInfo _proditemInfo;
 
             /// <summary>
             /// Creates a new SelectProduct  folder.
@@ -312,7 +312,7 @@ namespace OpenCart
                 _productmenuInfo = new RepoItemInfo(this, "ProductMenu", ".//div[#'narbar-menu']/ul/?/?/a[@innertext='Components']", 30000, null, "8dcf4966-0f41-4ef6-b08b-8fcd7b6f5e27");
                 _productcategoryInfo = new RepoItemInfo(this, "ProductCategory", ".//div[#'narbar-menu']/ul//div/?/?/ul//a[@innertext>'Monitors']", 30000, null, "13470f37-7a26-45c1-83fa-7403d7406aeb");
                 _productInfo = new RepoItemInfo(this, "Product", ".//div//form//h4/a[@innertext='Samsung SyncMaster 941BW']", 30000, null, "70a6195a-e36d-4a6f-a593-cb22681f0e2e");
-                _productitemInfo = new RepoItemInfo(this, "ProductItem", ".//div/div[1]/?/?/h1[@innertext='Samsung SyncMaster 941BW']", 30000, null, "902d0c3a-943e-4a2c-94ed-accea9c88965");
+                _proditemInfo = new RepoItemInfo(this, "Proditem", ".//div/div[1]/?/?/h1[@innertext='Samsung SyncMaster 941BW']", 30000, null, "902d0c3a-943e-4a2c-94ed-accea9c88965");
             }
 
             /// <summary>
@@ -400,26 +400,26 @@ namespace OpenCart
             }
 
             /// <summary>
-            /// The ProductItem item.
+            /// The Proditem item.
             /// </summary>
             [RepositoryItem("902d0c3a-943e-4a2c-94ed-accea9c88965")]
-            public virtual Ranorex.H1Tag ProductItem
+            public virtual Ranorex.H1Tag Proditem
             {
                 get
                 {
-                    return _productitemInfo.CreateAdapter<Ranorex.H1Tag>(true);
+                    return _proditemInfo.CreateAdapter<Ranorex.H1Tag>(true);
                 }
             }
 
             /// <summary>
-            /// The ProductItem item info.
+            /// The Proditem item info.
             /// </summary>
             [RepositoryItemInfo("902d0c3a-943e-4a2c-94ed-accea9c88965")]
-            public virtual RepoItemInfo ProductItemInfo
+            public virtual RepoItemInfo ProditemInfo
             {
                 get
                 {
-                    return _productitemInfo;
+                    return _proditemInfo;
                 }
             }
         }

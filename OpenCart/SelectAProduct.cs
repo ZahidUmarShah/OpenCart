@@ -116,8 +116,8 @@ namespace OpenCart
             Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'ApplicationUnderTest.SelectProduct.Product' and assigning its value to variable 'ProductChosen'.", repo.ApplicationUnderTest.SelectProduct.ProductInfo, new RecordItemIndex(7));
             ProductChosen = repo.ApplicationUnderTest.SelectProduct.Product.Element.GetAttributeValueText("InnerText");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$ProductChosen) on item 'ApplicationUnderTest.SelectProduct.ProductItem'.", repo.ApplicationUnderTest.SelectProduct.ProductItemInfo, new RecordItemIndex(8));
-            Validate.AttributeEqual(repo.ApplicationUnderTest.SelectProduct.ProductItemInfo, "InnerText", ProductChosen);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText=$ProductChosen) on item 'ApplicationUnderTest.SelectProduct.Proditem'.", repo.ApplicationUnderTest.SelectProduct.ProditemInfo, new RecordItemIndex(8));
+            Validate.AttributeEqual(repo.ApplicationUnderTest.SelectProduct.ProditemInfo, "InnerText", ProductChosen);
             
         }
 

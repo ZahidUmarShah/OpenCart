@@ -91,7 +91,7 @@ name="OpenCartRepository">
 				addcaps="unknown,webelement,h1tag"
 				capname="h1tag"
 				id="902d0c3a-943e-4a2c-94ed-accea9c88965"
-				name="ProductItem"
+				name="Proditem"
 				refimgid="99e73e8a-70ab-4bfd-8743-d4a5ac0c1fd2"
 				searchtimeout="30000ms">
 					/dom[@domain='demo.opencart.com']//div/div[1]/?/?/h1[@innertext='Samsung SyncMaster 941BW']
