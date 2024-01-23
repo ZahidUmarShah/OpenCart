@@ -1,0 +1,260 @@
+﻿<repository
+id="7e215f05-f9f2-48d8-bb9d-edc59778245d"
+name="OpenCartRepository">
+	<codegen
+	classname="OpenCartRepository"
+	namespace="OpenCart">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="ab95428f-0452-45cb-bb73-061bf2b40f97"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="04a0c008-7b36-4054-97df-3e79d2f7e9e7"
+		isrooted="True"
+		name="ApplicationUnderTest"
+		searchtimeout="30000ms"
+		usecache="False">
+			<folder
+			capname="unknown"
+			id="a2fb4039-b3a0-4f33-a69e-e647b6e05829"
+			isrooted="False"
+			name="Login"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="7bdd9ecb-d8ef-4b51-9839-415be84ac473"
+				name="InputEmail"
+				refimgid="d8b056e6-9380-4904-837f-575650f98c9c"
+				searchtimeout="30000ms">
+					/dom[@domain='demo.opencart.com']//input[@placeholder='E-Mail Address']
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="75992f99-109b-4d28-b2a0-28af020429e4"
+				name="InputPassword"
+				refimgid="5f080def-ca7d-4ca8-afbe-573118395fb2"
+				searchtimeout="30000ms">
+					/dom[@domain='demo.opencart.com']//input[@type='password']
+				</item>
+				<item
+				addcaps="button,webelement,buttontag"
+				capname="buttontag"
+				id="1d183f2d-9f42-4534-a6ab-31f4dfa83b9e"
+				name="BtnLogin"
+				refimgid="dea6853f-509b-4d26-9d8e-6afcc1811eec"
+				searchtimeout="30000ms">
+					/dom[@domain='demo.opencart.com']//form[#'form-login']/button[@innertext='Login']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="66d0f63a-d97b-4042-8bde-8d3a61b5cce2"
+			isrooted="False"
+			name="SelectProduct"
+			searchtimeout="0ms">
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="8dcf4966-0f41-4ef6-b08b-8fcd7b6f5e27"
+				name="ProductMenu"
+				refimgid="33a17439-516c-4009-b651-744fab120b8e"
+				refpath="/dom[@domain='demo.opencart.com']//div[#'narbar-menu']/ul/li[3]/a[@innertext='Components']"
+				searchtimeout="30000ms">
+					/dom[@domain='demo.opencart.com']//div[#'narbar-menu']/ul/?/?/a[@innertext='Components']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="13470f37-7a26-45c1-83fa-7403d7406aeb"
+				name="ProductCategory"
+				searchtimeout="30000ms">
+					/dom[@domain='demo.opencart.com']//div[#'narbar-menu']/ul//div/?/?/ul//a[@innertext&gt;'Monitors']
+				</item>
+				<item
+				addcaps="unknown,webelement,atag"
+				capname="atag"
+				id="70a6195a-e36d-4a6f-a593-cb22681f0e2e"
+				name="Product"
+				refimgid="4235c19a-151b-4ece-bb7e-73bf1284a696"
+				searchtimeout="30000ms">
+					/dom[@domain='demo.opencart.com']//div//form//h4/a[@innertext='Samsung SyncMaster 941BW']
+				</item>
+				<item
+				addcaps="unknown,webelement,h1tag"
+				capname="h1tag"
+				id="902d0c3a-943e-4a2c-94ed-accea9c88965"
+				name="ProductItem"
+				refimgid="99e73e8a-70ab-4bfd-8743-d4a5ac0c1fd2"
+				searchtimeout="30000ms">
+					/dom[@domain='demo.opencart.com']//div/div[1]/?/?/h1[@innertext='Samsung SyncMaster 941BW']
+				</item>
+			</folder>
+			<folder
+			capname="unknown"
+			id="4a75169e-8843-41d6-8d45-76db5e682de1"
+			isrooted="False"
+			name="CartPage"
+			searchtimeout="0ms">
+				<item
+				addcaps="button,webelement,buttontag"
+				capname="buttontag"
+				id="4495bcc1-c2a8-4b2e-9a1b-6ba6385ff99f"
+				name="ButtonCart"
+				refimgid="51de19c2-ac0f-424f-8c59-f59ac7dd5273"
+				searchtimeout="30000ms">
+					/dom[@domain='demo.opencart.com']//button[@innertext='Add to Cart']
+				</item>
+				<item
+				addcaps="button,webelement,buttontag"
+				capname="buttontag"
+				id="78808d28-7090-4fef-830e-27e2b3111f46"
+				name="Label_AddToCard_Number"
+				refimgid="3699c177-1512-4c89-9ad4-c788b30ce198"
+				searchtimeout="30000ms">
+					/dom[@domain='demo.opencart.com']//div[#'header-cart']/?/?/button[@innertext~$Quantity]
+				</item>
+				<item
+				addcaps="unknown,webelement,inputtag"
+				capname="inputtag"
+				id="c35b98b8-8d6f-4015-976f-4260077d0ac0"
+				name="InputQuantity"
+				refimgid="cefb8b86-3c7a-482a-934a-dff9f6d80314"
+				searchtimeout="30000ms">
+					/dom[@domain='demo.opencart.com']//input[@name='quantity']
+				</item>
+			</folder>
+			<basepath>
+				/dom[@domain='demo.opencart.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="cdcc8494-5bfd-430f-8afb-6be7303578fe"
+		isrooted="True"
+		name="YourStore"
+		refpath="/dom[@domain='demo.opencart.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="90c4adc6-6b3f-490e-8f3a-a4b84563b896"
+			name="MyAccount"
+			refimgid="99645810-84e7-47b6-bd98-197749b4b1b4"
+			searchtimeout="30000ms">
+				/dom[@domain='demo.opencart.com']//?/?/a[@href&gt;'https://demo.opencart.com']/span[@innertext='My Account']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="81e551c5-71ef-4ae9-ba09-df95e5940693"
+			name="ListItemLogin"
+			refimgid="afc3462b-8d2e-4e1b-8bb0-8670ad9ad19c"
+			searchtimeout="30000ms">
+				/dom[@domain='demo.opencart.com']//nav[#'top']/div[2]/div[2]/ul/li[2]/?/?/ul//a[@innertext='Login']
+			</item>
+			<basepath>
+				/dom[@domain='demo.opencart.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="container"
+		id="328217ed-36c9-4e10-a449-66b2036286dc"
+		isrooted="True"
+		name="MyAccountGoogleChrome"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="container,accessible"
+			capname="container"
+			id="9dc24563-cfaa-4642-9f4c-61e41e4d81aa"
+			name="Chrome_Popup"
+			refimgid="99df280d-c3c0-4095-88d9-bd01c857c9c2"
+			searchtimeout="30000ms">
+				/form[@title&gt;'My Account - Google Chrom']/container/form[@accessiblename&gt;'Check your saved password']/container/container[@accessiblerole='Pane']/container[@accessiblename&gt;'My Account - Google Chrom']/form/container/container[@accessiblerole='Pane']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="40bb6f94-33f7-4788-ab52-4e4241cf26ef"
+			name="BtnClose"
+			refimgid="e2fab83b-f392-4211-b6da-b768db4b472d"
+			searchtimeout="30000ms">
+				/form[@title&gt;'My Account - Google Chrom']/container/form[@accessiblename&gt;'Check your saved password']/container/container[@accessiblerole='Pane']/container[@accessiblerole='Pane']/?/?/button[@accessiblename='Close']
+			</item>
+			<basepath>
+				/form[@title&gt;'My Account - Google Chrom']/container/form[@accessiblename&gt;'Check your saved password']/container/container[@accessiblerole='Pane']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAO/SURBVDhPTZNtTFNnFMevySaODWK2ySQbtkAN
+baG0paLYlnuvArZgM5zGTRPYC37ZYua+bDFuTj6gzrENebFswBAmhGSbswQjTmnlRTbsZHEminMo
+dty2vLR0jnS0947nzx4al+0kv5yTJ+f/P8+TPIf5f8gYZtV9k8HsZ/XVfi7npp/PEae4HOLj9Lfo
+WfNkvnajgWEef9T+X7TJZKsG85Q5o3lZVT5WNz7F6wN+Tr9Ahcti4md1EZpDQr523J2rtrtzNWy3
+MSOBSlfEDJxUPGHWfulldR4K8bJ6CKwO3nxa59Ns1pJlBHP2omDWzniMGoc7T23tVSjiGIZjHhsw
+qqvo9TyCKdYAgTfAW8JCKC2C9yULfKUs8dk2EO92alSiIb4STfC2NbO5jZPJGfVXtnWtFcaxWwU6
+MmnKJr8bNfCX7UTo7Nfwj00gNP0QkcmLRBytINGBXBLt1xGxX7sYvZLtCzs1rzP6jh2fvnG0KHhx
+5wZM0PcKe1/EtY7vUd0poKxhDntOPcShLh8G3cMI33yTSCM5RPoha5k/Ke1M9pnS63xj8cKJ/Sb8
+UmpGoKsDR1o92PbxHzAcmYP+wzlwx0LUZAqeuxcguVlIwyqIwxmiNJxxl8k6bYtoW4sXXz5WgPP7
+rES458Xu+iB0h+eg/SAYQ3c4CNtnQVwb8yDiLoQ0tB7iVQURh9IlarB9Sd1aTDadsuCdE7vIb+M+
+7KgJIut9ChX/m7dVh3B9PIToT8sGqRCH5DEYVYv1vqrFEslssqCwdTfpvTOI/Z1+bK4KQn0oABXF
+UBlARbMf43f6II1shDSYQnleotxjVE2W5oymolDGFxZkt9hQ3vMuql1u7Gvzoag6AO54AK+1TKPd
+NYrAz2/R6WkQB5IhDawNi/1rzzHKhgKbwl7wYH1jIVlG9bkVe787CPuPl0nf2AzpvjGFb2+MwDF0
+ENP9SohXkiD2ryGia41/4VJSGcMkM/Hyo6bGNPvW2XT7VpLeUABVowWbTu8i/JlywrW/ivKuUlw4
+n4l517PU4GnK6vBsz+pvXHWJ6bGv/ELlZlZexzvk9XwwtW4LSavbgtR6nqTWcyS9jkdlZyZ+7U1C
+xJkI0ZUQFp2JV2cdia+MNiXHxwyeec+YIKvKs6Z8ZGqW1bCC7CQ/L6vlxLRalpjsebjsSP57vu+p
+cNT5xMx0d/zZqe7EPSO1Tz63tPRomWisULytiEs+YFgn+4QtltfwHSk13G3lSVP0eIcCD3oTvGJf
+3Lm/Lq080FO5UtlDJy/FNpFh/gFAijDxcABfLQAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="7f26a93d-6f1a-4181-8d2d-6df3471ccad7"
+		name="Quantity">
+			&#32;1
+		</var>
+	</variables>
+</repository>

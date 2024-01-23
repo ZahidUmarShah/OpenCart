@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="OpenCart"
+      id="b840f659-1347-448f-b826-0becdd57269c"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="OpenCart"
+      id="b840f659-1347-448f-b826-0becdd57269c"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

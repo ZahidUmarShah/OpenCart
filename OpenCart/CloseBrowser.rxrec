@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a15e866e-7324-45cc-b9f8-44e4f1eb71b8"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseBrowser"
+	namespace="OpenCart">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="1ca8b517-bd32-4501-b1db-0d65d2ce1ea7">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="04a0c008-7b36-4054-97df-3e79d2f7e9e7"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname='iexplore']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="7e215f05-f9f2-48d8-bb9d-edc59778245d"
+	name="OpenCartRepository"
+	relativepath="OpenCartRepository.rxrep">
+		<codegen
+		classname="OpenCartRepository"
+		namespace="OpenCart">
+		</codegen>
+		<rootfolder
+		id="ab95428f-0452-45cb-bb73-061bf2b40f97"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
