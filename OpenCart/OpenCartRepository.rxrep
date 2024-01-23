@@ -217,7 +217,7 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 			addcaps="button,accessible"
 			capname="button"
 			id="40bb6f94-33f7-4788-ab52-4e4241cf26ef"
-			name="ButtonClose"
+			name="BtnClose"
 			refimgid="e2fab83b-f392-4211-b6da-b768db4b472d"
 			searchtimeout="30000ms">
 				/form[@title&gt;'My Account - Google Chrom']/container/form[@accessiblename&gt;'Check your saved password']/container/container[@accessiblerole='Pane']/container[@accessiblerole='Pane']/?/?/button[@accessiblename='Close']
